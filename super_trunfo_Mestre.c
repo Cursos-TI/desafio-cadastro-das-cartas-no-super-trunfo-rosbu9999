@@ -64,7 +64,7 @@ int main(){
     printf("digite a quantidade de pontos turisticos: \n ");
     scanf("%d", &pontosturisticos2);
     
-    pib2 = (float)pib2 / populacao2;
+    pib4 = (float)pib2 / populacao2;
     densidade2 = (float)populacao2 / area2;
     superpoder2 = populacao2 + area2 + + pib2 + densidade2;
 
@@ -82,7 +82,11 @@ int main(){
 
     printf("comparação das cartas\n");
 
-    printf("população: %d", (populacao1 > populacao2))
+    printf("população: Carta %d Venceu (%d)", (populacao1 > populacao2) (populacao2 > populacao1)
+                            (populacao1 >= populacao2));
+    printf("Área: Carta %d venceu (%d)",(area1 > area2) (area2 > area1) (area1 >= area2));
+    printf("PIB: Carta %d Venceu %d", (pib3 > pib4) (pib4 > pib3) (pib3 >= pib4) )
+
 
 
 
