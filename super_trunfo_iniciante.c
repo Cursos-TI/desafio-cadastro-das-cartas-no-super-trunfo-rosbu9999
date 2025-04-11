@@ -25,11 +25,11 @@ int main(){
     scanf("%d", &pontosturisticos);
 
     printf("carta: 01\n");
-    printf("Estado: %s \n", estado);
+    printf("estado: %s\n", estado);
     printf("Codigo: %s \n", codigo);
-    printf("Cidade: %i \n", cidade);
+    printf("Cidade: %s \n", cidade);
     printf("População: %d \n", populacao);
     printf("Área: %f \n", area);
     printf("Pib: %f \n", pib);
-    printf("Pontos Turisticos: %d \n", pontosturisticos)
+    printf("Pontos Turisticos: %d \n", pontosturisticos);
 }
