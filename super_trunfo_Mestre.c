@@ -1,14 +1,14 @@
 #include <stdio.h>
 int main(){
 
-    char estado1, estado2[20];
-    char codigo1, codigo2[20];
-    char cidade1, cidade2[30];
+    char estado1[20], estado2[20];
+    char codigo1[20], codigo2[20];
+    char cidade1[20], cidade2[30];
     unsigned int populacao1, populacao2;
     float area1, area2;
     float pib1, pib2;
     int pontosturisticos1, pontosturisticos2;
-    float pib3, pib4;
+    double pib3, pib4;
     float densidade1, densidade2;
     float superpoder1, superpoder2;
     
@@ -82,12 +82,17 @@ int main(){
 
     printf("comparação das cartas\n");
 
-    printf("população: Carta %d Venceu (%d)", (populacao1 > populacao2) (populacao2 > populacao1)
+    printf("população: Carta %d Venceu (%d)\n", (populacao1 > populacao2)* 1 + (populacao2 > populacao1)* 2,
                             (populacao1 >= populacao2));
-    printf("Área: Carta %d venceu (%d)",(area1 > area2) (area2 > area1) (area1 >= area2));
-    printf("PIB: Carta %d Venceu %d", (pib3 > pib4) (pib4 > pib3) (pib3 >= pib4) )
-
-
+    printf("Área: Carta %d Venceu (%d)\n",(area1 > area2)* 1 + (area2 > area1)* 2, (area1 >= area2));
+    printf("PIB: Carta %d Venceu (%d)\n",(pib3 > pib4)* 1 + (pib4 > pib3)* 2, (pib3 >= pib4));
+    printf("Pontos: Carta %d Venceu (%d)\n",(pontosturisticos1 > pontosturisticos2)* 1 + (pontosturisticos2 > pontosturisticos1)* 2,
+                                         (pontosturisticos1 >= pontosturisticos2));
+    printf("Densidade Populacional%d Venceu (%d)\n", (densidade1 > densidade2)* 1 + (densidade2 > densidade1)* 2,
+                                                 (densidade1 >= densidade2));
+    printf("PIB percapita: Carta %d Venceu (%d)\n", (pib3 > pib4)* 1 + (pib4 > pib3)* 2, (pib3 >= pib4));
+    printf("Super poder: Carta %d Venceu (%d)\n", (superpoder1 > superpoder2)* 1 + (superpoder2 > superpoder1)* 2,
+                                              (superpoder1 >= superpoder2));
 
 
 
